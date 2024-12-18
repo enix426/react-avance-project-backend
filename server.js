@@ -21,6 +21,7 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/threads', require('./routes/threadRoutes'));
 app.use('/api/comments', require('./routes/commentRoutes'));
+app.use('/api/users', require('./routes/usersRoutes'));
 
 // Serve avatar images
 app.use('/uploads/avatars', express.static(path.join(__dirname, 'uploads/avatars')));
